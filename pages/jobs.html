@@ -1,0 +1,2567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerNest: All Jobs</title>
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+    <!--Swiper CSS CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--/Swiper CSS CDN-->
+    <!--Light Gallery CSS CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery.min.css" />
+    <!--/Light Gallery CSS CDN-->
+  </head>
+  <body>
+    <!--Header Section-->
+    <header class="header">
+      <section class="flex">
+        <div class="menu-btn">
+          <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+        <a href="../index.html" class="logo"
+          ><i class="fas fa-briefcase" id="icon"></i> Career<span>Nest</span></a
+        >
+
+        <nav class="navbar">
+          <a href="../index.html">Home</a>
+          <a href="/pages/about.html">About Us</a>
+          <a href="/pages/jobs.html">all jobs</a>
+          <a href="/pages/contact.html">contact us</a>
+          <a href="/pages/login.html">account</a>
+        </nav>
+
+        <a href="#" class="btn" style="margin-top: 0">post jobs</a>
+      </section>
+    </header>
+    <!--/Header Section-->
+
+    <!--Jobs Filter Section-->
+    <section class="job-filter">
+      <h1 class="heading">filter jobs</h1>
+      <form action="" method="post">
+        <div class="flex">
+          <div class="box">
+            <p>job title <span>*</span></p>
+            <input
+              type="text"
+              name="title"
+              placeholder="Keyword, Category or Company"
+              required
+              maxlength="20"
+              class="input" />
+          </div>
+          <div class="box">
+            <p>job location</p>
+            <input
+              type="text"
+              name="location"
+              placeholder="Location: City, State Or Country"
+              required
+              maxlength="50"
+              class="input" />
+          </div>
+        </div>
+        <div class="dropdown-con">
+          <div class="dropdown">
+            <input
+              type="text"
+              readonly
+              placeholder="Date Posted:"
+              name="date"
+              id=""
+              class="output"
+              maxlength="20" />
+            <div class="lists">
+              <p class="items">Any</p>
+              <p class="items">today</p>
+              <p class="items">3 days ago</p>
+              <p class="items">7 days ago</p>
+              <p class="items">10 days ago</p>
+              <p class="items">15 days ago</p>
+              <p class="items">30+ days ago</p>
+            </div>
+          </div>
+          <div class="dropdown">
+            <input
+              type="text"
+              readonly
+              placeholder="Estimated Salary:"
+              name="date"
+              id=""
+              class="output"
+              maxlength="20" />
+            <div class="lists">
+              <p class="items">Any</p>
+              <p class="items">R5k or less</p>
+              <p class="items">R5k - R15k</p>
+              <p class="items">R15k - R25k</p>
+              <p class="items">R25k - R40k</p>
+              <p class="items">R40k - R60k</p>
+              <p class="items">R60k - R75k</p>
+              <p class="items">R75k - R100k</p>
+              <p class="items">R100k - R125k</p>
+              <p class="items">R125k+</p>
+            </div>
+          </div>
+          <div class="dropdown">
+            <input
+              type="text"
+              readonly
+              placeholder="Education Level:"
+              name="date"
+              id=""
+              class="output"
+              maxlength="20" />
+            <div class="lists">
+              <p class="items">Any</p>
+              <p class="items">Matric Certificate</p>
+              <p class="items">Higher Diploma</p>
+              <p class="items">Higher Certificate</p>
+              <p class="items">Bachelor's Degree</p>
+              <p class="items">Honor's Degree</p>
+              <p class="items">Master's Degree</p>
+              <p class="items">PHD</p>
+            </div>
+          </div>
+          <div class="dropdown">
+            <input
+              type="text"
+              readonly
+              placeholder="Experience:"
+              name="date"
+              id=""
+              class="output"
+              maxlength="20" />
+            <div class="lists">
+              <p class="items">Any</p>
+              <p class="items">None</p>
+              <p class="items">6 months - 1 year</p>
+              <p class="items">1 year</p>
+              <p class="items">2 years - 3 years</p>
+              <p class="items">3 years - 5 years</p>
+              <p class="items">5 years+</p>
+            </div>
+          </div>
+          <div class="dropdown">
+            <input
+              type="text"
+              readonly
+              placeholder="Job Type:"
+              name="date"
+              id=""
+              class="output"
+              maxlength="20" />
+            <div class="lists">
+              <p class="items">Any</p>
+              <p class="items">Part-Time</p>
+              <p class="items">Full-Time</p>
+              <p class="items">Internship</p>
+              <p class="items">Temporary</p>
+            </div>
+          </div>
+          <div class="dropdown">
+            <input
+              type="text"
+              readonly
+              placeholder="Work Shift:"
+              name="date"
+              id=""
+              class="output"
+              maxlength="20" />
+            <div class="lists">
+              <p class="items">Any</p>
+              <p class="items">Day Shift</p>
+              <p class="items">Night Shift</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <!--/Jobs Filter Section-->
+
+    <!--All Jobs Section-->
+    <div class="section-title">all jobs</div>
+    <section class="jobs-con">
+      <div class="box-con">
+        <!-- Job 1 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon1.jfif" alt="" />
+            <div>
+              <h3>TechNova Solutions</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Frontend Developer (React)</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Degree in Computer Science or related field</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R35,000 - R50,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 9AM-5PM (Hybrid)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job1.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon2.jfif" alt="" />
+            <div>
+              <h3>SecureNet Africa</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Cybersecurity Analyst</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Certification (CEH/CISSP) + 3 years experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R45,000 - R65,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>24/7 Shift Rotation (Remote)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job2.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon3.jfif" alt="" />
+            <div>
+              <h3>CloudForge</h3>
+              <span>Posted 5 hours ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">DevOps Engineer (AWS)</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Degree + AWS Certified</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R50,000 - R75,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible (Remote with on-call)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job3.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon4.jfif" alt="" />
+            <div>
+              <h3>DataPulse Labs</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Junior Python Developer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Pretoria, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Diploma/Bootcamp + Portfolio</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R15,000 - R25,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Part-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>20 hrs/week (Flexible)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job4.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+        <!-- Job 5 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon5.jfif" alt="" />
+            <div>
+              <h3>LifeCare Hospitals</h3>
+              <span>Posted 3 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Registered Nurse (ICU)</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>BSc Nursing + SANC Registration</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R25,000 - R40,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>12-hour shifts (Day/Night Rotation)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job5.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 6 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon6.jfif" alt="" />
+            <div>
+              <h3>Sunrise Health Clinics</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">General Practitioner (GP)</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>MBChB + HPCSA Registration</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R60,000 - R90,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-5PM (Private Practice)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job6.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 7 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon7.jfif" alt="" />
+            <div>
+              <h3>Elite Rehab Center</h3>
+              <span>Posted 5 hours ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Physiotherapist</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>BSc Physiotherapy + HPCSA License</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R20,000 - R30,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Part-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>3 days/week (Flexible Hours)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job7.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 8 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon8.jfif" alt="" />
+            <div>
+              <h3>CurePlus Pharmacy</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Pharmacy Technician</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Pretoria, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Diploma + SAPC Registration</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R12,000 - R18,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Sat, 9AM-6PM (Retail Pharmacy)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job8.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 9 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon9.jfif" alt="" />
+            <div>
+              <h3>Vertex Financial Group</h3>
+              <span>Posted 4 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Chartered Accountant</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Sandton, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>CA(SA) + 3 years post-articles</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R65,000 - R95,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-5PM (Hybrid)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job9.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 10 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon10.jfif" alt="" />
+            <div>
+              <h3>Capstone Investments</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Financial Analyst</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>BCom Finance/CFA Level 1</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R35,000 - R55,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible hours (Remote options)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job10.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 11 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon11.jfif" alt="" />
+            <div>
+              <h3>FirstRand Bank</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Credit Manager</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>BCom + 5 years credit risk experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R45,000 - R70,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8:30AM-4:30PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job11.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 12 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon12.jfif" alt="" />
+            <div>
+              <h3>Balance Matters</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Bookkeeper</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Diploma + Pastel/Sage proficiency</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R15,000 - R22,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Part-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>3 days/week (Flexible)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job12.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+        <!-- Job 13 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon13.jfif" alt="" />
+            <div>
+              <h3>InfraBuild Solutions</h3>
+              <span>Posted 5 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Civil Engineer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Pretoria, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>BEng Civil + ECSA Registration</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R50,000 - R75,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 7:30AM-4:30PM (Site/Office)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job13.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 14 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon14.jfif" alt="" />
+            <div>
+              <h3>VoltGreen Energy</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Electrical Engineer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>BEng Electrical + Solar experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R45,000 - R70,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible (Site visits required)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job14.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 15 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon15.jfif" alt="" />
+            <div>
+              <h3>Manto Minerals</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Mechanical Engineer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Rustenburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>BEng Mechanical + GCC Mines preferred</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R60,000 - R85,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>6AM-4PM (Mine site rotation)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job15.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <!-- Job 16 -->
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon16.jfif" alt="" />
+            <div>
+              <h3>Circuitronix</h3>
+              <span>Posted 3 hours ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Junior Software Engineer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Stellenbosch, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>BEng/BSc in Computer/Electrical Engineering</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R30,000 - R45,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-5PM (Lab/Office)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job16.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon17.jfif" alt="" />
+            <div>
+              <h3>BrandElevate</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Digital Marketing Specialist</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Degree in Marketing + 3 years experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R25,000 - R40,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-5PM (Hybrid)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job17.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon18.jfif" alt="" />
+            <div>
+              <h3>TradeLink Solutions</h3>
+              <span>Posted 3 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Sales Executive (B2B)</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Diploma in Sales + 2 years B2B experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R20,000 + Commission (OTE R45,000)</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8:30AM-5PM (Field Sales)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job18.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon19.jfif" alt="" />
+            <div>
+              <h3>ViralNova</h3>
+              <span>Posted 6 hours ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Social Media Manager</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Portfolio with 10K+ follower growth case studies</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R30,000 - R45,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible hours (Remote)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job19.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon20.jfif" alt="" />
+            <div>
+              <h3>UrbanTrend Retail</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Retail Sales Associate</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Pretoria, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Matric + Retail experience preferred</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R8,000 - R12,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Part-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Weekends + 3 Weekdays (Flexible)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job20.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon21.jfif" alt="" />
+            <div>
+              <h3>HelpHub Solutions</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Customer Support Representative</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Matric + 1 year call center experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R10,000 - R15,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Rotational shifts (24/7 operations)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job21.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon22.jfif" alt="" />
+            <div>
+              <h3>ClientFirst SA</h3>
+              <span>Posted 5 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Client Success Manager</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Degree + 3 years account management</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R25,000 - R35,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-5PM (Hybrid)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job22.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon23.jfif" alt="" />
+            <div>
+              <h3>TeleConnect SA</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Call Center Agent</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Matric required (No experience needed)</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R8,000 - R12,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Part-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Evenings & Weekends (20 hrs/week)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job23.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon24.jfif" alt="" />
+            <div>
+              <h3>SmileMore Retail</h3>
+              <span>Posted 3 hours ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Customer Experience Specialist</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Pretoria, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Diploma in Hospitality/Customer Service</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R15,000 - R20,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Sat, 9AM-6PM (Retail hours)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job24.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon25.jfif" alt="" />
+            <div>
+              <h3>BrightFuture Academy</h3>
+              <span>Posted 4 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Mathematics Teacher (Grades 8-12)</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>B.Ed + SACE registration</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R30,000 - R45,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 7:30AM-3:30PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job25.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon26.jfif" alt="" />
+            <div>
+              <h3>TinyTots Preschool</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">ECD Practitioner</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>NQF Level 4 ECD qualification</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R12,000 - R18,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-4PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job26.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon27.jfif" alt="" />
+            <div>
+              <h3>Global Lingua</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Online English Tutor</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Remote, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>TEFL/TESOL certification</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R150 - R250/hour</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Part-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible hours (Evenings/Weekends)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job27.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon28.jfif" alt="" />
+            <div>
+              <h3>TechVarsity</h3>
+              <span>Posted 3 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Lecturer: Computer Science</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Stellenbosch, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>PhD + 2 years teaching experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R55,000 - R75,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible (Teaching/Research)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job28.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon29.jfif" alt="" />
+            <div>
+              <h3>BuildRight Construction</h3>
+              <span>Posted 5 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Site Foreman</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Trade Certificate + 5 years experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R35,000 - R50,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Sat, 6AM-4PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job29.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon30.jfif" alt="" />
+            <div>
+              <h3>InfraWorks SA</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Civil Engineer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Pretoria, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>BEng Civil + ECSA registration</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R55,000 - R75,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 7:30AM-4:30PM (Site/Office)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job30.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon31.jfif" alt="" />
+            <div>
+              <h3>VoltMax Electrical</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Commercial Electrician</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Wireman's License + 3 years experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R280 - R350/hour</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Contract</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Project-based hours</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job31.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon32.jfif" alt="" />
+            <div>
+              <h3>BrickByBrick Projects</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Construction Laborer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>No formal qualifications required</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i><span>R150 - R220/day</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Sat, 7AM-4PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job32.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon33.jfif" alt="" />
+            <div>
+              <h3>Grandeur Hotels</h3>
+              <span>Posted 3 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Hotel General Manager</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Degree in Hospitality + 8 years experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R45,000 - R65,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible hours (On-call required)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job33.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon34.jfif" alt="" />
+            <div>
+              <h3>Epicurean Delights</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Sous Chef</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Chef Diploma + 5 years fine dining</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R25,000 - R35,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Evening shifts (2PM-11PM)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job34.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon35.jfif" alt="" />
+            <div>
+              <h3>Safari Sands Lodge</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Front Desk Agent</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Kruger Park, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Hospitality Diploma + 2 years experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R12,000 - R18,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Rotational shifts (24/7 operation)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job35.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon36.jfif" alt="" />
+            <div>
+              <h3>The Cocktail Lab</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Mixologist</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Mixology certification preferred</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R10,000 + Tips (Avg. R18,000 total)</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Part-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Evenings & Weekends</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job36.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon37.jfif" alt="" />
+            <div>
+              <h3>LexCorp Associates</h3>
+              <span>Posted 4 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Corporate Lawyer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Sandton, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>LLB + Admitted Attorney (5+ years PQE)</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R85,000 - R120,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-6PM (Hybrid)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job37.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon38.jfif" alt="" />
+            <div>
+              <h3>Justice Partners Inc.</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Legal Secretary</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Legal Secretary Diploma + 3 years experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R18,000 - R25,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8:30AM-5PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job38.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon39.jfif" alt="" />
+            <div>
+              <h3>Freedom Law Clinic</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Human Rights Attorney</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>LLB + Admitted Attorney (NGO experience)</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R45,000 - R65,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible hours (Court appearances required)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job39.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon40.jfif" alt="" />
+            <div>
+              <h3>Prime Property Law</h3>
+              <span>Posted 3 hours ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Conveyancing Paralegal</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Paralegal Certificate + Deeds Office experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R22,000 - R30,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-4:30PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job40.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon41.jfif" alt="" />
+            <div>
+              <h3>UrbanTrend Retail</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Retail Store Manager</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>3+ years retail management experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R25,000 - R35,000/month + bonuses</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Sat, 8AM-6PM (Rotational Sundays)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job41.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon42.jfif" alt="" />
+            <div>
+              <h3>LogiFast Solutions</h3>
+              <span>Posted 5 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Warehouse Supervisor</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Forklift license + 2 years supervisory experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R18,000 - R25,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Shift work (6AM-3PM/2PM-11PM)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job42.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon43.jfif" alt="" />
+            <div>
+              <h3>FashionForward</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Retail Sales Associate</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Matric certificate (Retail experience preferred)</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R8,000 - R12,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Part-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Weekends + 3 Weekdays (Flexible)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job43.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon44.jfif" alt="" />
+            <div>
+              <h3>StockWise Distributors</h3>
+              <span>Posted 3 hours ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Inventory Controller</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Pretoria, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Diploma in Logistics/Inventory Management</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R20,000 - R28,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 7AM-4PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job44.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon45.jfif" alt="" />
+            <div>
+              <h3>TalentSphere Consulting</h3>
+              <span>Posted 3 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">HR Business Partner</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Sandton, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>BCom HR/Industrial Psychology + 5 years experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R45,000 - R65,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-5PM (Hybrid)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job45.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon46.jfif" alt="" />
+            <div>
+              <h3>HireRight Solutions</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Recruitment Specialist</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Degree + 3 years recruitment experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R30,000 - R45,000/month + commission</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8:30AM-5PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job46.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon47.jfif" alt="" />
+            <div>
+              <h3>SkillBridge Academy</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">L&D Coordinator</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>HR Diploma + Training experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R25,000 - R35,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-4:30PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job47.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon48.jfif" alt="" />
+            <div>
+              <h3>PeopleFirst Group</h3>
+              <span>Posted 5 hours ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">HR Administrator</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>HR Certificate (No experience required)</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R12,000 - R18,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-5PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job48.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon49.jfif" alt="" />
+            <div>
+              <h3>PixelCraft Studios</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Graphic Designer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Portfolio + 3 years design experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R20,000 - R35,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 9AM-5PM (Remote options)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job49.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon50.jfif" alt="" />
+            <div>
+              <h3>CreativeHive Agency</h3>
+              <span>Posted 4 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Art Director</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Degree + 5 years agency experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R45,000 - R65,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible hours (Deadline-driven)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job50.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon51.jfif" alt="" />
+            <div>
+              <h3>StorySpark Publishing</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Children's Book Illustrator</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Remote, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Portfolio of children's illustrations</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R300 - R500 per illustration</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Contract</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Project-based deadlines</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job51.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon52.jfif" alt="" />
+            <div>
+              <h3>FrameFlow Studios</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Motion Graphics Designer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Pretoria, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Showreel + After Effects expertise</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R30,000 - R45,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible hours (Results-oriented)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job52.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon53.jfif" alt="" />
+            <div>
+              <h3>TransAfrica Logistics</h3>
+              <span>Posted 3 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Long Haul Truck Driver</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Nationwide Routes,
+            South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Code 14 License + PDP (3 years experience)</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R18,000 - R25,000/month + bonuses</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>14 days on/7 days off rotation</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job53.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon54.jfif" alt="" />
+            <div>
+              <h3>QuickDrop Couriers</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">E-Commerce Delivery Driver</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Gauteng Province,
+            South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Code 10 License + PDP</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R12,000 - R16,000/month + tips</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Sat, 8AM-6PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job54.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon55.jfif" alt="" />
+            <div>
+              <h3>AutoFlow Transport</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Fleet Manager</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Durban, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Logistics Diploma + 5 years fleet experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R35,000 - R50,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 7:30AM-4:30PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job55.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon56.jfif" alt="" />
+            <div>
+              <h3>CityMove Transit</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Public Bus Driver</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Code 14 License + PDP (Public Driver Permit)</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R15,000 - R20,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Shift work (Early/Late rotations)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job56.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon57.jfif" alt="" />
+            <div>
+              <h3>PrimeCorp Solutions</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Executive Assistant</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Sandton, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Diploma + 5 years EA experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R25,000 - R35,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8AM-5PM (Hybrid)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job57.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon58.jfif" alt="" />
+            <div>
+              <h3>EfficientBiz Ltd</h3>
+              <span>Posted 5 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Office Administrator</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Office Admin Certificate + 2 years experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R15,000 - R22,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 8:30AM-5PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job58.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon59.jfif" alt="" />
+            <div>
+              <h3>DataFlow Systems</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Remote Data Entry Clerk</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Remote, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Matric + 60 WPM typing speed</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R8,000 - R12,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Part-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible hours (20-30 hrs/week)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job59.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon60.jfif" alt="" />
+            <div>
+              <h3>FirstImpression Group</h3>
+              <span>Posted 3 hours ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Corporate Receptionist</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>Diploma + Excellent communication skills</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R12,000 - R18,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri, 7:30AM-4:30PM</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job60.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon61.jfif" alt="" />
+            <div>
+              <h3>NeuralNova AI</h3>
+              <span>Posted 2 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Machine Learning Engineer</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Cape Town, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>MSc in CS/AI + 3 years ML experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R75,000 - R110,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible hours (Results-driven)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job61.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon62.jfif" alt="" />
+            <div>
+              <h3>LinguaTech Analytics</h3>
+              <span>Posted 5 days ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">NLP Data Scientist</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Remote, South Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>PhD/NLP publications + Python expertise</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R65,000 - R95,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Project-based deadlines</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job62.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon63.jfif" alt="" />
+            <div>
+              <h3>Visionary AI Labs</h3>
+              <span>Posted 1 week ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">Computer Vision Researcher</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Stellenbosch, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>PhD in CV + OpenCV/TensorFlow mastery</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R80,000 - R120,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Flexible (Lab/Remote hybrid)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job63.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="company">
+            <img src="/assets/careernest-companyicon64.jfif" alt="" />
+            <div>
+              <h3>AI Nexus Solutions</h3>
+              <span>Posted 1 day ago</span>
+            </div>
+          </div>
+          <h3 class="job-title">AI Product Manager</h3>
+          <p class="location">
+            <i class="fas fa-map-marker-alt" id="icon"></i> Johannesburg, South
+            Africa
+          </p>
+          <div class="tags">
+            <p>
+              <i class="fas fa-certificate" id="icon"></i
+              ><span>MBA/Tech degree + 5 years AI product experience</span>
+            </p>
+            <p>
+              <i class="fas fa-coins" id="icon"></i
+              ><span>R90,000 - R130,000/month</span>
+            </p>
+            <p>
+              <i class="fas fa-briefcase" id="icon"></i><span>Full-Time</span>
+            </p>
+            <p>
+              <i class="fas fa-clock" id="icon"></i
+              ><span>Mon-Fri (Flexible core hours)</span>
+            </p>
+          </div>
+          <div class="flex-btn">
+            <a href="/pages/view_job64.html" class="btn">view details</a>
+            <button type="submit" class="far fa-heart" id="icon"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/All Jobs Section-->
+
+    <!--Footer Section-->
+    <footer class="footer">
+      <section class="grid">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="../index.html"
+            ><i class="fas fa-angle-right" id="icon"></i>Home</a
+          >
+          <a href="/pages/about.html"
+            ><i class="fas fa-angle-right" id="icon"></i>About Us</a
+          >
+          <a href="/pages/jobs.html"
+            ><i class="fas fa-angle-right" id="icon"></i>all jobs</a
+          >
+          <a href="/pages/contact.html"
+            ><i class="fas fa-angle-right" id="icon"></i>contact us</a
+          >
+        </div>
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="/pages/login.html"
+            ><i class="fas fa-angle-right" id="icon"></i>login</a
+          >
+          <a href="/pages/register.html"
+            ><i class="fas fa-angle-right" id="icon"></i>register</a
+          >
+          <a href="#"><i class="fas fa-angle-right" id="icon"></i>post job</a>
+          <a href="#"><i class="fas fa-angle-right" id="icon"></i>dashboard</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#"><i class="fab fa-facebook-f" id="icon"></i> facebook</a>
+          <a href="#"><i class="fab fa-x-twitter" id="icon"></i> x</a>
+          <a href="#"><i class="fab fa-instagram" id="icon"></i> instagram</a>
+          <a href="#"><i class="fab fa-linkedin" id="icon"></i> linkedin</a>
+        </div>
+      </section>
+      <div class="credit">
+        created by
+        <a href="https:/ai-datawizard.github.io/Portfolio/">tadiwa chopamba</a>
+        | all rights reserved &copy;
+      </div>
+    </footer>
+    <!--/Footer Section-->
+    <script src="/code/code.jquery.com_jquery-3.7.0.js"></script>
+    <script src="/code/main.js"></script>
+    <!--JS Code for Dropdwon Lists-->
+    <script>
+      let dropdown_items = document.querySelectorAll(
+        ".job-filter form .dropdown-con  .dropdown .lists .items"
+      );
+
+      dropdown_items.forEach((items) => {
+        items.onclick = () => {
+          items_parent = items.parentElement.parentElement;
+          let output = items_parent.querySelector(".output");
+          output.value = items.innerHTML;
+        };
+      });
+    </script>
+    <!--/JS Code for Dropdwon Lists-->
+    <script src="/js/all.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <!--Script Tag For Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--/Script Tag For Swiper-->
+    <!--Script Tag For Light Gallery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js"></script>
+    <!--/Script Tag For Light Gallery-->
+  </body>
+</html>

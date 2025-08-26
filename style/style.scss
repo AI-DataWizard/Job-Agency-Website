@@ -1,0 +1,1014 @@
+/*Common Elements*/
+$gray: #778899;
+$pri: #444444;
+$black: #141414;
+$light-bg: #fdfdfd;
+$hover: #003366;
+$white: #ffffff;
+$gray2: #a9b3bc;
+$border: 0.1rem solid #aaa;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+@font-face {
+  font-family: font;
+  src: url("/fonts/Lilita_One/LilitaOne-Regular.ttf");
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+
+@mixin title-text($val) {
+  font-size: $val;
+  color: $black;
+}
+
+@mixin graph-text($graphSize) {
+  font-size: $graphSize;
+  line-height: 2;
+  color: $gray2;
+  padding: 1rem 0;
+}
+
+* {
+  font-family: font;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  text-decoration: none !important;
+  transition: all 0.4s cubic-bezier(0.43, 1.1, 0.62, 1.08);
+
+  &::selection {
+    background-color: $pri;
+    color: $white;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $pri;
+  }
+}
+
+body {
+  background: $light-bg;
+}
+
+section {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: white;
+  background: $pri;
+  border-radius: 0.5rem;
+  text-align: center;
+  text-transform: capitalize;
+
+  &:hover {
+    background: $black;
+    transform: scale(1.05);
+  }
+}
+
+.flex-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+  color: $black;
+  padding: 1rem;
+}
+
+.section-title {
+  margin-top: 8rem;
+  border-top: 1rem solid $pri;
+  border-bottom: 1rem solid $pri;
+  background: $black;
+  color: $white;
+  text-align: center;
+  padding: 6rem 2rem;
+  font-size: 6rem;
+}
+/*/Common Elements*/
+
+/*Header Section*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+  box-shadow: $box-shadow;
+  z-index: 1000;
+
+  .flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      font-size: 2.5rem;
+      color: $black;
+
+      #icon,
+      span {
+        color: $pri;
+      }
+
+      #icon {
+        margin-right: 0.5rem;
+      }
+    }
+
+    .navbar {
+      a {
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        font-size: 1.6rem;
+        color: $gray2;
+        border-radius: 0.5rem;
+
+        &:hover {
+          background: $pri;
+          color: $white;
+        }
+      }
+    }
+
+    .menu-btn {
+      font-size: 3rem;
+      color: $black;
+      cursor: pointer;
+      display: none;
+    }
+  }
+}
+/*/Header Section*/
+
+/*Home Section*/
+.home-con {
+  background: url("/assets/careernest-homebg.jpg"), rgba(0, 0, 0, 0.7) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: color;
+
+  .home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+      background-color: $white;
+      width: 50rem;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      text-align: center;
+
+      h3 {
+        @include title-text(2.5rem);
+        margin-bottom: 1rem;
+      }
+
+      p {
+        @include graph-text(1.6rem);
+        text-align: left;
+
+        span {
+          color: $pri;
+        }
+      }
+
+      .input {
+        width: 100%;
+        border-radius: 0.5rem;
+        margin: 1rem 0;
+        background: $light-bg;
+        padding: 1.4rem;
+        font-size: 1.8rem;
+        color: $black;
+        border: $border;
+      }
+    }
+  }
+}
+/*/Home Section*/
+/*Category Section*/
+.category {
+  .box-con {
+    @include grid(25rem);
+    justify-content: center;
+    align-items: flex-start;
+
+    .box {
+      border-radius: 0.5rem;
+      border: $border;
+      box-shadow: $box-shadow;
+      padding: 2rem;
+      background: $white;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &:hover {
+        background: $black;
+
+        #icon {
+          background: $light-bg;
+          color: $black;
+        }
+
+        h3 {
+          color: $white;
+        }
+
+        span {
+          color: $light-bg;
+        }
+      }
+
+      #icon {
+        height: 3rem;
+        width: 3.5rem;
+        line-height: 3rem;
+        padding: 1.5rem;
+        color: $light-bg;
+        background: $black;
+        border-radius: 0.5rem;
+        text-align: center;
+      }
+
+      h3 {
+        @include title-text(2rem);
+        padding-bottom: 0.75rem;
+      }
+
+      span {
+        font-size: 1.6rem;
+        color: $pri;
+      }
+    }
+  }
+}
+/*/Category Section*/
+
+/*Job Section*/
+.jobs-con {
+  .box-con {
+    @include grid(35rem);
+    align-items: flex-start;
+    justify-content: center;
+    .box {
+      background: $white;
+      border-radius: 0.5rem;
+      border: $border;
+      padding: 2rem;
+      box-shadow: $box-shadow;
+      overflow-x: hidden;
+
+      .company {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+
+        img {
+          height: 8rem;
+          width: 8rem;
+          object-fit: cover;
+          border: $border;
+        }
+
+        h3 {
+          @include title-text(1.8rem);
+          text-overflow: ellipsis;
+          overflow-x: hidden;
+          text-transform: capitalize;
+          padding-bottom: 0.5rem;
+        }
+
+        span {
+          color: $gray;
+          font-size: 1.6rem;
+        }
+      }
+
+      .job-title {
+        @include title-text(2rem);
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        text-transform: capitalize;
+      }
+
+      .location {
+        padding: 1rem 0;
+        font-size: 1.6rem;
+        color: $gray;
+
+        #icon {
+          padding-right: 0.5rem;
+          color: $pri;
+        }
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1.5rem 0;
+
+        p {
+          padding: 1.2rem;
+          border-radius: 0.5rem;
+          background-color: $light-bg;
+          color: $gray;
+          font-size: 1.4rem;
+          border: $border;
+          #icon {
+            padding-right: 0.5rem;
+            color: $pri;
+          }
+        }
+      }
+
+      .fa-heart {
+        background: $light-bg;
+        border-radius: 0.5rem;
+        color: $gray2;
+        font-size: 1.8rem;
+        height: 3rem;
+        line-height: 3rem;
+        width: 3.5rem;
+        padding: 1rem;
+        border: $border;
+        cursor: pointer;
+        &:hover {
+          background: $white;
+          color: red;
+        }
+      }
+    }
+  }
+}
+/*/Job Section*/
+
+/*About Section*/
+.about {
+  img {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .box {
+    background: $white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    border: $border;
+    box-shadow: $box-shadow;
+
+    h3 {
+      @include title-text(2.5rem);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      @include graph-text(1.6rem);
+    }
+
+    a {
+      display: block;
+      margin: 0 auto;
+      width: 20rem;
+    }
+  }
+}
+/*/About Section*/
+
+/*Reviews Section*/
+.reviews {
+  .owl-next,
+  .owl-prev {
+    display: none;
+  }
+  .review-slider {
+    @include grid(30rem);
+
+    .box {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: $white;
+      border: $border;
+      border-radius: 0.5rem;
+      margin: 0 0.5rem;
+
+      img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        border: $border;
+        border-color: $pri;
+        border-width: 0.2rem;
+        object-fit: cover;
+        margin: 1rem auto;
+      }
+
+      h3 {
+        @include title-text(2rem);
+      }
+      p {
+        @include graph-text(1.3rem);
+      }
+      .stars {
+        #icon {
+          font-size: 1.5rem;
+          color: yellow;
+        }
+      }
+    }
+  }
+}
+/*/Reviews Section*/
+
+/*Job Filter Section*/
+.job-filter {
+  .heading {
+    margin-top: 7.5rem;
+  }
+  form {
+    background: $white;
+    padding: 2rem;
+    border: $border;
+    box-shadow: $box-shadow;
+    border-radius: 0.5rem;
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 1.5rem;
+      .box {
+        flex: 1 1 40rem;
+
+        p {
+          @include graph-text(1.6rem);
+
+          span {
+            color: $pri;
+          }
+        }
+
+        .input {
+          width: 100%;
+          border-radius: 0.5rem;
+          padding: 1.4rem;
+          color: $black;
+          margin: 1rem 0;
+          background: $light-bg;
+          border: $border;
+        }
+      }
+    }
+
+    .dropdown-con {
+      margin: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .dropdown {
+        flex: 1 1 16rem;
+        position: relative;
+
+        &:hover {
+          .lists {
+            transform: scaleY(1);
+            transition: 0.2s linear;
+          }
+        }
+
+        .output {
+          width: 100%;
+          background: $light-bg;
+          border-radius: 0.5rem;
+          padding: 1.4rem;
+          font-size: 1.8rem;
+          color: $black;
+          border: $border;
+          text-align: center;
+          user-select: none;
+          cursor: pointer;
+
+          &:focus + .lists {
+            transform: scaleY(1);
+            transition: 0.2s linear;
+          }
+
+          &:focus-within + .lists {
+            transform: scaleY(1);
+            transition: 0.2s linear;
+          }
+        }
+
+        .lists {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: $white;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          border: $border;
+          box-shadow: $box-shadow;
+          z-index: 0;
+          transform: scaleY(0);
+          transform-origin: top;
+
+          &:hover {
+            transform: scaleY(1);
+            transition: 0.2s linear;
+          }
+
+          .items {
+            padding: 1.2rem 1.4rem;
+            border-radius: 0.5rem;
+            font-size: 1.5rem;
+            color: $black;
+            cursor: pointer;
+
+            &:hover {
+              background-color: $light-bg;
+              border: $border;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*/Job Filter Section*/
+
+/*Job Details Section*/
+.job-details {
+  .heading {
+    margin-top: 7.5rem;
+  }
+  .details {
+    background: $white;
+    border-radius: 0.5rem;
+    border: $border;
+    padding: 2rem;
+    box-shadow: $box-shadow;
+    overflow-x: hidden;
+
+    h3 {
+      margin-bottom: 1rem;
+      @include title-text(2rem);
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .job-info {
+      a {
+        display: block;
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: $pri;
+        margin-top: 1rem;
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+      p {
+        @include graph-text(1.6rem);
+      }
+    }
+
+    .basic-details {
+      background: $light-bg;
+      margin: 1.5rem 0;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      border: $border;
+      padding-bottom: 0;
+
+      p {
+        @include graph-text(1.6rem);
+        padding: 0;
+        padding-bottom: 2rem;
+      }
+    }
+
+    ul {
+      margin: 1rem 0;
+      li {
+        @include graph-text(1.6rem);
+        margin-left: 3rem;
+      }
+    }
+
+    .description {
+      margin: 1.5rem 0;
+      border: $border;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      p {
+        @include graph-text(1.6rem);
+        color: gray;
+      }
+    }
+
+    .save {
+      background: $light-bg;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      cursor: pointer;
+      font-size: 1.8rem;
+      border: $border;
+
+      &:hover {
+        background: $pri;
+        #icon {
+          color: red;
+        }
+        span {
+          color: white;
+        }
+      }
+
+      #icon {
+        margin-right: 0.5rem;
+        color: $black;
+      }
+
+      span {
+        color: $gray2;
+      }
+    }
+  }
+}
+/*/Job Details Section*/
+/*Company Details Section*/
+.view-company {
+  .heading {
+    margin-top: 7.5rem;
+  }
+  .details {
+    background: $white;
+    box-shadow: $box-shadow;
+    border: $border;
+    border-radius: 0.5rem;
+    padding: 2rem;
+
+    .info {
+      max-width: 40rem;
+      margin: 0 auto;
+      border-radius: 0.5rem;
+      background: $light-bg;
+      border: $border;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      img {
+        height: 15rem;
+        width: 15rem;
+        object-fit: contain;
+        border: $border;
+        border-color: $black;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        @include title-text(2rem);
+        padding: 1rem 0;
+      }
+
+      p {
+        @include graph-text(1.6rem);
+      }
+    }
+
+    .description {
+      margin-top: 1rem;
+      h3 {
+        @include title-text(2.5rem);
+        padding: 1rem 0;
+      }
+
+      p {
+        @include graph-text(1.6rem);
+        padding: 0.5rem 0;
+        color: gray;
+      }
+    }
+
+    ul {
+      li {
+        margin-left: 3rem;
+        font-size: 1.6rem;
+        color: $pri;
+        padding-top: 1.5rem;
+      }
+    }
+  }
+}
+/*/Company Details Section*/
+
+/*Contact Section*/
+.contact {
+  .box-con {
+    @include grid(30rem);
+    align-items: flex-start;
+    justify-content: center;
+
+    .box {
+      padding: 2rem;
+      text-align: center;
+      background: $white;
+      border: $border;
+      box-shadow: $box-shadow;
+      border-radius: 0.5rem;
+
+      #icon {
+        height: 3rem;
+        width: 3rem;
+        line-height: 7rem;
+        background-color: $pri;
+        border-radius: 50%;
+        color: $white;
+        padding: 1.1rem 1.2rem;
+        margin: 1.5rem auto;
+        display: block;
+      }
+
+      a {
+        @include title-text(1.8rem);
+        text-transform: none;
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+
+  form {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: $white;
+    border: $border;
+    box-shadow: $box-shadow;
+    border-radius: 0.5rem;
+
+    h3 {
+      @include title-text(2.5rem);
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 1rem;
+
+      .box {
+        flex: 1 1 40rem;
+      }
+    }
+
+    .input {
+      width: 100%;
+      border-radius: 0.5rem;
+      padding: 1.4rem;
+      color: $black;
+      font-size: 1.8rem;
+      background-color: $light-bg;
+      border: $border;
+      margin: 1rem 0;
+    }
+
+    p {
+      text-align: left;
+      padding-top: 1rem;
+      color: $gray2;
+      font-size: 1.6rem;
+
+      span {
+        color: red;
+      }
+    }
+
+    textarea {
+      height: 15rem;
+      resize: none;
+    }
+
+    .btn {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+/*/Contact Section*/
+
+/*Account Section*/
+.account-form-con {
+  background: url("/assets/careernest-accountbg.jpg"),
+    rgba(0, 0, 0, 0.7) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: color;
+  margin-top: 6rem;
+
+  .account-form {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+      background: $white;
+      padding: 2rem;
+      text-align: center;
+      width: 50rem;
+      border-radius: 0.5rem;
+
+      h3 {
+        @include title-text(2.5rem);
+        margin-bottom: 1rem;
+      }
+
+      .input {
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 1.8rem;
+        padding: 1.4rem;
+        background: $light-bg;
+        border-radius: 0.5rem;
+        text-transform: none;
+        border: $border;
+      }
+
+      p {
+        @include graph-text(1.6rem);
+
+        a {
+          color: $pri;
+
+          &:hover {
+            color: $black;
+            text-decoration: underline !important;
+          }
+        }
+      }
+    }
+  }
+}
+/*/Account Section*/
+
+/*Footer Section*/
+.footer {
+  text-align: center;
+
+  .grid {
+    @include grid(30rem);
+
+    justify-content: center;
+    align-items: flex-start;
+
+    .box {
+      h3 {
+        @include title-text(2rem);
+        margin: 1rem 0;
+        padding-bottom: 1rem;
+      }
+
+      a {
+        display: block;
+        padding: 1rem 0;
+        font-size: 1.6rem;
+        color: $gray2;
+
+        #icon {
+          padding-right: 0.5rem;
+        }
+
+        &:hover {
+          color: $pri;
+          #icon {
+            padding-right: 0.75rem;
+            color: $pri;
+          }
+        }
+      }
+    }
+  }
+
+  .credit {
+    text-align: center;
+    padding: 2rem;
+    background: $white;
+    font-size: 2rem;
+    color: $gray2;
+    border-top: $border;
+    border-bottom: $border;
+
+    a {
+      font-size: 2.2rem;
+      font-weight: bolder;
+      color: $pri;
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
+/*/Footer Section*/
+
+/*Media Queries*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .section-title {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 52.5%;
+  }
+
+  .section-title {
+    font-size: 4rem;
+    padding: 4rem 2rem;
+  }
+
+  .header {
+    .flex {
+      .menu-btn {
+        display: inline-block;
+      }
+      .navbar {
+        position: absolute;
+        top: -400%;
+        left: 0;
+        right: 0;
+        border-top: $border;
+        background: $white;
+        padding: 1rem 0.5rem;
+
+        a {
+          display: block;
+          padding: 1rem;
+        }
+      }
+    }
+    &.active {
+      .flex {
+        .navbar {
+          top: 99%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+/*/Media Queries*/
