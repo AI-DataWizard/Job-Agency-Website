@@ -1,7 +1,7 @@
 /*Common Elements*/
 @font-face {
   font-family: font;
-  src: url("/fonts/Lilita_One/LilitaOne-Regular.ttf");
+  src: url("/Job-Agency-Website/fonts/Lilita_One/LilitaOne-Regular.ttf");
 }
 * {
   font-family: font;
@@ -138,7 +138,7 @@ section {
 /*/Header Section*/
 /*Home Section*/
 .home-con {
-  background: url("/assets/careernest-homebg.jpg"), rgba(0, 0, 0, 0.7) no-repeat;
+  background: url("/Job-Agency-Website/assets/careernest-homebg.jpg"), rgba(0, 0, 0, 0.7) no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -754,7 +754,7 @@ section {
 /*/Contact Section*/
 /*Account Section*/
 .account-form-con {
-  background: url("/assets/careernest-accountbg.jpg"), rgba(0, 0, 0, 0.7) no-repeat;
+  background: url("/Job-Agency-Website/assets/careernest-accountbg.jpg"), rgba(0, 0, 0, 0.7) no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
